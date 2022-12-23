@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+
+    <!-- Normal -->
+
+    <ProjectReference Include="..\Normal\Normal.csproj" />
+
+    <!-- Single modifier -->
+
+    <ProjectReference Include="..\EmbedInteropTypes\EmbedInteropTypes.csproj">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </ProjectReference>
+
+    <ProjectReference Include="..\PrivateLib\NonPrivate.csproj">
+      <Private>false</Private>
+    </ProjectReference>
+
+    <ProjectReference Include="..\NoReferenceOutput\NoReferenceOutput.csproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+
+    <!-- Modifier combos -->
+
+    <ProjectReference Include="..\NonPrivateAndEmbedInteropTypes\NonPrivateAndEmbedInteropTypes.csproj">
+      <Private>false</Private>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </ProjectReference>
+
+    <ProjectReference Include="..\PrivateAndNoReferenceOutput\NonPrivateAndNoReferenceOutput.csproj">
+      <Private>false</Private>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+
+    <ProjectReference Include="..\EmbedInteropTypesAndNoReferenceOutput\EmbedInteropTypesAndNoReferenceOutput.csproj">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+
+    <ProjectReference Include="..\NonPrivateAndEmbedInteropTypesAndNoReferenceOutputAssembly\NonPrivateAndEmbedInteropTypesAndNoReferenceOutput.csproj">
+      <Private>false</Private>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,7 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\NonPrivateAndEmbedInteropTypesAndNoReferenceOutputAssemblyRef\NonPrivateAndEmbedInteropTypesAndNoReferenceOutputRef.csproj" />
+  </ItemGroup>
+
+</Project>
